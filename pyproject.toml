@@ -9,10 +9,10 @@ packages = [
 ]
 readme = "README.md"
 repository = "https://github.com/ngshiheng/sbux"
-version = "1.0.0"
+version = "0.0.0"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.9"
 requests = "^2.28.1"
 
 [tool.poetry.group.dev.dependencies]
@@ -21,24 +21,22 @@ black = "^22.12.0"
 flake8 = "^6.0.0"
 isort = "^5.11.4"
 pre-commit = "^2.21.0"
+python-semantic-release = "^7.32.2"
 
 [tool.black]
 line-length = 100
 
 [tool.isort]
-extra_standard_library = ["pytest", "toml", "click"]
+extra_standard_library = ["toml"]
 line_length = 100
 profile = "black"
 
 [tool.semantic_release]
 branch = "main"
 build_command = "pip install poetry && poetry build"
+major_on_zero = true
 upload_to_pypi = true
 upload_to_release = true
-version_pattern = [
-  "README.md:rev: v{version}",
-  "docs/CONTRIBUTING.md:sbux, version {version}",
-]
 version_toml = [
   "pyproject.toml:tool.poetry.version",
 ]
