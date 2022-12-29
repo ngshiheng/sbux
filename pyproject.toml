@@ -1,0 +1,51 @@
+[tool.poetry]
+authors = ["Jerry Ng <ngshiheng@gmail.com>"]
+description = "An unofficial Starbucks Singapore (SG) software development kit (SDK)."
+homepage = "https://github.com/ngshiheng/sbux"
+license = "MIT"
+name = "sbux"
+packages = [
+  {include = "sbux", from = "src"},
+]
+readme = "README.md"
+repository = "https://github.com/ngshiheng/sbux"
+version = "1.0.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.1"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.1"
+black = "^22.12.0"
+flake8 = "^6.0.0"
+isort = "^5.11.4"
+pre-commit = "^2.21.0"
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+extra_standard_library = ["pytest", "toml", "click"]
+line_length = 100
+profile = "black"
+
+[tool.semantic_release]
+branch = "main"
+build_command = "pip install poetry && poetry build"
+upload_to_pypi = true
+upload_to_release = true
+version_pattern = [
+  "README.md:rev: v{version}",
+  "docs/CONTRIBUTING.md:sbux, version {version}",
+]
+version_toml = [
+  "pyproject.toml:tool.poetry.version",
+]
+version_variable = [
+  "src/sbux/__init__.py:__version__",
+]
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
