@@ -25,6 +25,12 @@ class Starbucks:
 
     def get_menu_items(self, branch_code: str) -> list[Item]:
         """Retrieves a list of menu items for a given BranchCode from the Starbucks API."""
+        is_valid_branch_code = (
+            branch_code and isinstance(branch_code, str) and branch_code.isnumeric()
+        )
+        if not is_valid_branch_code:
+            raise ValueError("Invalid input. branch_code must be a valid string numeric.")
+
         url = f"{self.api_base_url}/json/mop/menu/{branch_code}.json"
         response = requests.get(url, headers=self.headers)
 
