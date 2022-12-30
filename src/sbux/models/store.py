@@ -1,12 +1,15 @@
 from dataclasses import dataclass, field
 from typing import Optional
 
-from dataclasses_json import LetterCase, config, dataclass_json
+from dataclasses_json import config
+
+from .base import BaseSBUXDataClassJsonMixin
 
 
-@dataclass_json(letter_case=LetterCase.PASCAL)
 @dataclass
-class ServiceHour:
+class ServiceHour(BaseSBUXDataClassJsonMixin):
+    """Represents the operating hours of a Starbucks store on a particular day of the week."""
+
     day_of_week_string: Optional[str]
     day_of_week: Optional[int]
     open_from: Optional[str]
@@ -15,9 +18,10 @@ class ServiceHour:
     is_closed: bool
 
 
-@dataclass_json(letter_case=LetterCase.PASCAL)
 @dataclass
-class Amenities:
+class Amenities(BaseSBUXDataClassJsonMixin):
+    """Represents the amenities available at a Starbucks store."""
+
     nitro_cold_brew: bool
     starbucks_reserve: bool
     mobile_order_and_pay: bool = field(metadata=config(field_name="MobileOrderandPay"))
@@ -25,9 +29,10 @@ class Amenities:
     pour_over_brew: bool
 
 
-@dataclass_json(letter_case=LetterCase.PASCAL)
 @dataclass
-class Store:
+class Store(BaseSBUXDataClassJsonMixin):
+    """Represents a Starbucks store."""
+
     branch_code: Optional[str]
     outlet_code: Optional[str]
     store_code: Optional[str]

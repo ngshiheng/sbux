@@ -1,12 +1,15 @@
 from dataclasses import dataclass, field
 from typing import Optional
 
-from dataclasses_json import LetterCase, config, dataclass_json
+from dataclasses_json import config
+
+from .base import BaseSBUXDataClassJsonMixin
 
 
-@dataclass_json(letter_case=LetterCase.PASCAL)
 @dataclass
-class Modifier:
+class Modifier(BaseSBUXDataClassJsonMixin):
+    """Represents a menu item modifier at Starbucks."""
+
     item_code: Optional[str]
     name: Optional[str]
     filter_code: Optional[str]
@@ -25,9 +28,10 @@ class Modifier:
     default_values: Optional[list[str]]
 
 
-@dataclass_json(letter_case=LetterCase.PASCAL)
 @dataclass
-class ModifierGroup:
+class ModifierGroup(BaseSBUXDataClassJsonMixin):
+    """Represents a group of modifiers that can be applied to a menu item at Starbucks."""
+
     menu_id: Optional[str]
     name: Optional[str]
     description: Optional[str]
@@ -42,9 +46,10 @@ class ModifierGroup:
     modifiers: Optional[list[Modifier]]
 
 
-@dataclass_json(letter_case=LetterCase.PASCAL)
 @dataclass
-class Item:
+class Item(BaseSBUXDataClassJsonMixin):
+    """Represents a menu item at Starbucks."""
+
     item_id: Optional[str]
     item_code: Optional[str]
     name: Optional[str]
