@@ -21,11 +21,11 @@ class Starbucks:
         """Parses the response from a 'get_stores' request and returns a list of Store objects."""
         stores_data = response.json()["Data"]
 
-        return [Store(**store) for store in stores_data]
+        return Store.schema().load(stores_data, many=True)
 
-    def get_menu_items(self, store_id: str) -> list[Item]:
-        """Retrieves a list of menu items for a given store from the Starbucks API."""
-        url = f"{self.api_base_url}/json/mop/menu/{store_id}.json"
+    def get_menu_items(self, branch_code: str) -> list[Item]:
+        """Retrieves a list of menu items for a given BranchCode from the Starbucks API."""
+        url = f"{self.api_base_url}/json/mop/menu/{branch_code}.json"
         response = requests.get(url, headers=self.headers)
 
         return self._parse_get_menu_items(response)
@@ -34,4 +34,4 @@ class Starbucks:
         """Parses the response from a 'get_menu_items' request and returns a list of Item objects."""
         menu_data = response.json()["Data"][0]["Items"]
 
-        return [Item(**item) for item in menu_data]
+        return Item.schema().load(menu_data, many=True)

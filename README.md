@@ -17,7 +17,7 @@ from sbux import Starbucks
 
 app = Starbucks
 app.get_stores()
-app.get_menu_items(store_id="13377")
+app.get_menu_items(branch_code="13377")
 ```
 
 ## Contributing
