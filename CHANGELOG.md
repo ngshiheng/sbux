@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2022-12-30)
+### Fix
+* Handle missing field values when decoding ([`02514f6`](https://github.com/ngshiheng/sbux/commit/02514f67356c460f65209188c063c30e7192745a))
+
 ## v0.2.0 (2022-12-30)
 ### Feature
 * Add basic input validation for branch_code arg ([`a2759ba`](https://github.com/ngshiheng/sbux/commit/a2759ba05a67a2bbf2d6adb0e363507b1d719472))
