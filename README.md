@@ -1,6 +1,11 @@
 # sbux
 
-`sbux` is an unofficial Starbucks Singapore (SG) software development kit (SDK). SBUX is the ticker symbol of Starbucks Corporation on the NASDAQ.
+[![CI](https://github.com/ngshiheng/sbux/actions/workflows/ci.yml/badge.svg)](https://github.com/ngshiheng/sbux/actions/workflows/ci.yml)
+[![Semantic Release](https://github.com/ngshiheng/sbux/actions/workflows/release.yml/badge.svg)](https://github.com/ngshiheng/sbux/actions/workflows/release.yml)
+
+`sbux` is an unofficial Starbucks Singapore (SG) software development kit (SDK).
+
+`sbux` is named after the ticker symbol of Starbucks Corporation (SBUX) on the NASDAQ.
 
 ## Installing
 
@@ -15,9 +20,10 @@ pip install sbux
 ```python
 from sbux import Starbucks
 
-app = Starbucks
-app.get_stores()
-app.get_menu_items(branch_code="13377")
+
+starbucks = Starbucks
+starbucks.get_stores()
+starbucks.get_menu_items(branch_code="13377")
 ```
 
 ## Contributing
