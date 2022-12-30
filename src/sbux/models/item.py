@@ -20,9 +20,9 @@ class Modifier:
     is_quantifiable: bool
     is_default: bool
     uom: Optional[str] = field(metadata=config(field_name="UOM"))
-    photo_urls: list[str] = field(metadata=config(field_name="PhotoURLs"))
-    default_keys: list[str]
-    default_values: list[str]
+    photo_urls: Optional[list[str]] = field(metadata=config(field_name="PhotoURLs"))
+    default_keys: Optional[list[str]]
+    default_values: Optional[list[str]]
 
 
 @dataclass_json(letter_case=LetterCase.PASCAL)
@@ -39,7 +39,7 @@ class ModifierGroup:
     is_free: bool
     is_quantifiable: bool
     uom: Optional[str] = field(metadata=config(field_name="UOM"))
-    modifiers: list[Modifier]
+    modifiers: Optional[list[Modifier]]
 
 
 @dataclass_json(letter_case=LetterCase.PASCAL)
@@ -51,9 +51,9 @@ class Item:
     description: Optional[str]
     base_price: Optional[int]
     base_price_dlvr: Optional[int]
-    photo_urls: list[str] = field(metadata=config(field_name="PhotoURLs"))
+    photo_urls: Optional[list[str]] = field(metadata=config(field_name="PhotoURLs"))
     sequence: Optional[float]
-    modifier_group: list[ModifierGroup]
+    modifier_group: Optional[list[ModifierGroup]]
     pmt_no: Optional[str] = field(metadata=config(field_name="PMTNo"))
     pmt_ref_no: Optional[str] = field(metadata=config(field_name="PMTRefNo"))
     pmt_amount: Optional[int] = field(metadata=config(field_name="PMTAmount"))

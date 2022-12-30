@@ -204,3 +204,71 @@ ITEM_JSON = {
         }
     ]
 }
+
+ITEM_JSON_WITH_NULLS = {
+    "Data": [
+        {
+            "Items": [
+                {
+                    "ItemId": "1",
+                    "ItemCode": "4500700209",
+                    "Name": "Bagel",
+                    "Description": "Start your day with a nutritious plain bagel.\t",
+                    "BasePrice": 410,
+                    "BasePriceDlvr": 440,
+                    "PhotoURLs": [
+                        "https://static.sbux.mobi/images/mop/20220616/88a37dc0-eb93-4280-93d5-63286fe4a649/plain-bagel.jpg"
+                    ],
+                    "Sequence": 0.0,
+                    "ModifierGroup": None,
+                    "PMTNo": None,
+                    "PMTRefNo": None,
+                    "PMTAmount": 0,
+                    "PMTLine": 0,
+                    "IsMOP": True,
+                    "IsDelivery": True,
+                    "IsInventoried": True,
+                    "IsFeatured": False,
+                    "IsScheduled": True,
+                    "IsDineIn": True,
+                },
+                {
+                    "ItemId": "2",
+                    "ItemCode": "4500700131",
+                    "Name": "Cookie Crumble Cheesecake",
+                    "Description": "A childhood favorite, each bite delights with crumbly cookie chunks and smooth cream cheese.",
+                    "BasePrice": 750,
+                    "BasePriceDlvr": 800,
+                    "PhotoURLs": None,
+                    "Sequence": 0.0,
+                    "ModifierGroup": [
+                        {
+                            "MenuId": "Choice_Condiments",
+                            "Name": "Condiments",
+                            "Description": "",
+                            "PhotoURLs": None,
+                            "Sequence": 0.0,
+                            "SelectionRangeMin": 0,
+                            "SelectionRangeMax": 2,
+                            "IsFixedPrice": False,
+                            "IsFree": False,
+                            "IsQuantifiable": False,
+                            "UOM": None,
+                            "Modifiers": None,
+                        }
+                    ],
+                    "PMTNo": None,
+                    "PMTRefNo": None,
+                    "PMTAmount": 0,
+                    "PMTLine": 0,
+                    "IsMOP": True,
+                    "IsDelivery": True,
+                    "IsInventoried": True,
+                    "IsFeatured": False,
+                    "IsScheduled": True,
+                    "IsDineIn": True,
+                },
+            ]
+        }
+    ]
+}
