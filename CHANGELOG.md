@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2022-12-30)
+### Feature
+* Use mixin for better static analysis tools support ([`0743976`](https://github.com/ngshiheng/sbux/commit/0743976f9c27c686df2b18d8444e2a2bec2a6cca))
+
+### Documentation
+* Add badges ([`992473c`](https://github.com/ngshiheng/sbux/commit/992473c985d12ec62aa4b4486cef6e96ed80f287))
+
 ## v0.2.1 (2022-12-30)
 ### Fix
 * Handle missing field values when decoding ([`02514f6`](https://github.com/ngshiheng/sbux/commit/02514f67356c460f65209188c063c30e7192745a))
