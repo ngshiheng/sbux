@@ -40,3 +40,29 @@ class StarbucksTestCase(unittest.TestCase):
         self.assertIsInstance(items, list)
         self.assertEqual(len(items), 2)
         self.assertTrue(all(isinstance(item, Item) for item in items))
+
+    @patch("requests.get")
+    def test_get_menu_items_with_empty_branch_code(self, mock_get):
+        del mock_get  # unused
+
+        starbucks = Starbucks()
+        empty_string_store_id = ""
+        self.assertRaises(ValueError, starbucks.get_menu_items, empty_string_store_id)
+        white_spaces_store_id = "    "
+        self.assertRaises(ValueError, starbucks.get_menu_items, white_spaces_store_id)
+
+    @patch("requests.get")
+    def test_get_menu_items_with_int_branch_code(self, mock_get):
+        del mock_get  # unused
+
+        starbucks = Starbucks()
+        int_store_id = 123
+        self.assertRaises(ValueError, starbucks.get_menu_items, int_store_id)
+
+    @patch("requests.get")
+    def test_get_menu_items_with_non_numeric_branch_code(self, mock_get):
+        del mock_get  # unused
+
+        starbucks = Starbucks()
+        non_numeric_store_id = "store id which is not numeric"
+        self.assertRaises(ValueError, starbucks.get_menu_items, non_numeric_store_id)
