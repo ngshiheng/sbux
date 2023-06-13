@@ -3,9 +3,7 @@
 [![CI](https://github.com/ngshiheng/sbux/actions/workflows/ci.yml/badge.svg)](https://github.com/ngshiheng/sbux/actions/workflows/ci.yml)
 [![Semantic Release](https://github.com/ngshiheng/sbux/actions/workflows/release.yml/badge.svg)](https://github.com/ngshiheng/sbux/actions/workflows/release.yml)
 
-`sbux` is an unofficial Starbucks Singapore (SG) software development kit (SDK).
-
-`sbux` is named after the ticker symbol of Starbucks Corporation (SBUX) on the NASDAQ.
+`sbux` is an unofficial Starbucks Singapore (SG) Python SDK.
 
 ## Installing
 
@@ -15,7 +13,7 @@ Install and update using `pip`;
 pip install sbux
 ```
 
-## A Simple Example
+## Example
 
 ```python
 from sbux import Starbucks
