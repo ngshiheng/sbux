@@ -44,8 +44,10 @@ ITEM_JSON = {
                                     "PhotoURLs": [
                                         "https://static.sbux.mobi/images/mop/drink_1080.png"
                                     ],
+                                    "PopupImage": False,
                                     "DefaultKeys": ["4500700209"],
                                     "DefaultValues": [""],
+                                    "Description": "",
                                 },
                                 {
                                     "ItemCode": "4500600217",
@@ -64,8 +66,10 @@ ITEM_JSON = {
                                     "PhotoURLs": [
                                         "https://static.sbux.mobi/images/mop/drink_1080.png"
                                     ],
+                                    "PopupImage": False,
                                     "DefaultKeys": ["4500700209"],
                                     "DefaultValues": [""],
+                                    "Description": "",
                                 },
                                 {
                                     "ItemCode": "4500600091",
@@ -84,8 +88,10 @@ ITEM_JSON = {
                                     "PhotoURLs": [
                                         "https://static.sbux.mobi/images/mop/drink_1080.png"
                                     ],
+                                    "PopupImage": False,
                                     "DefaultKeys": ["4500700209"],
                                     "DefaultValues": ["0"],
+                                    "Description": "",
                                 },
                                 {
                                     "ItemCode": "4500600090",
@@ -104,8 +110,10 @@ ITEM_JSON = {
                                     "PhotoURLs": [
                                         "https://static.sbux.mobi/images/mop/drink_1080.png"
                                     ],
+                                    "PopupImage": False,
                                     "DefaultKeys": ["4500700209"],
                                     "DefaultValues": ["0"],
+                                    "Description": None,
                                 },
                                 {
                                     "ItemCode": "4500740082",
@@ -124,8 +132,10 @@ ITEM_JSON = {
                                     "PhotoURLs": [
                                         "https://static.sbux.mobi/images/mop/drink_1080.png"
                                     ],
+                                    "PopupImage": False,
                                     "DefaultKeys": ["4500700209"],
                                     "DefaultValues": ["0"],
+                                    "Description": None,
                                 },
                             ],
                         }
@@ -183,8 +193,10 @@ ITEM_JSON = {
                                     "PhotoURLs": [
                                         "https://static.sbux.mobi/images/mop/drink_1080.png"
                                     ],
+                                    "PopupImage": False,
                                     "DefaultKeys": ["4500700131"],
                                     "DefaultValues": [""],
+                                    "Description": "",
                                 }
                             ],
                         }

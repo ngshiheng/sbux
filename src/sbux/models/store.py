@@ -1,5 +1,4 @@
 from dataclasses import dataclass, field
-from typing import Optional
 
 from dataclasses_json import config
 
@@ -10,10 +9,10 @@ from .base import BaseSBUXDataClassJsonMixin
 class ServiceHour(BaseSBUXDataClassJsonMixin):
     """Represents the operating hours of a Starbucks store on a particular day of the week."""
 
-    day_of_week_string: Optional[str]
-    day_of_week: Optional[int]
-    open_from: Optional[str]
-    open_to: Optional[str]
+    day_of_week_string: str
+    day_of_week: int
+    open_from: str
+    open_to: str
     is_24_hours: bool = field(metadata=config(field_name="Is24Hours"))
     is_closed: bool
 
@@ -33,15 +32,15 @@ class Amenities(BaseSBUXDataClassJsonMixin):
 class Store(BaseSBUXDataClassJsonMixin):
     """Represents a Starbucks store."""
 
-    branch_code: Optional[str]
-    outlet_code: Optional[str]
-    store_code: Optional[str]
-    store_name: Optional[str]
-    address: Optional[str]
-    postal_code: Optional[str]
-    phone_no: Optional[str]
-    longitude: Optional[str]
-    latitude: Optional[str]
+    branch_code: str
+    outlet_code: str
+    store_code: str
+    store_name: str
+    address: str
+    postal_code: str
+    phone_no: str
+    longitude: str
+    latitude: str
     monp_status: bool = field(metadata=config(field_name="MONPStatus"))
     delivery_status: bool
     service_hours: list[ServiceHour]
