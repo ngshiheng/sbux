@@ -26,6 +26,8 @@ starbucks.get_stores()
 starbucks.get_menu_items(branch_code="13377")
 ```
 
+See more [examples](./examples/).
+
 ## Contributing
 
 For guidance on setting up a development environment and how to make a contribution, see the [contributing guidelines](./docs/CONTRIBUTING.md).
