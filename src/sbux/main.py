@@ -25,13 +25,11 @@ class Starbucks:
         return self._parse_get_stores(response)
 
     def _parse_get_stores(self, response: requests.Response) -> list[Store]:
-        """Parses the response from a 'get_stores' request and returns a list of Store objects."""
         stores_data = response.json()["Data"]
 
         return Store.schema().load(stores_data, many=True)
 
     def get_menu_items(self, branch_code: str) -> list[Item]:
-        """Retrieves a list of menu items for a given BranchCode from the Starbucks API."""
         is_valid_branch_code = (
             branch_code and isinstance(branch_code, str) and branch_code.isnumeric()
         )
@@ -44,7 +42,6 @@ class Starbucks:
         return self._parse_get_menu_items(response)
 
     def _parse_get_menu_items(self, response: requests.Response) -> list[Item]:
-        """Parses the response from a 'get_menu_items' request and returns a list of Item objects."""
         menu_data = response.json()["Data"][0]["Items"]
 
         return Item.schema().load(menu_data, many=True)
