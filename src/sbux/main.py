@@ -1,6 +1,13 @@
 import requests
+import requests_cache
 
 from .models import Item, Store
+
+CACHE_DIR = ".requests_cache/sbux"
+SECONDS_IN_ONE_DAY = 86_400
+
+
+requests_cache.install_cache(CACHE_DIR, expire_after=SECONDS_IN_ONE_DAY)
 
 
 class Starbucks:
