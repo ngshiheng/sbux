@@ -2,6 +2,17 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.0 (2023-06-13)
+### Feature
+* Export all models ([`da6182f`](https://github.com/ngshiheng/sbux/commit/da6182f9a4ab6d2fb3432ebd69e863cfd0452da5))
+* Use request_cache to cache requests ([`f29b3a0`](https://github.com/ngshiheng/sbux/commit/f29b3a082e3344af39f90775b0175a9aed35f8ee))
+
+### Fix
+* Add popup_image and description to Modifiers ([`82cd9d4`](https://github.com/ngshiheng/sbux/commit/82cd9d41a9ba632185a8e6a9a7ac0d57a59e7f00))
+
+### Documentation
+* Add examples ([`d2077bf`](https://github.com/ngshiheng/sbux/commit/d2077bf2f4bddfa65d91e2dc98f7ccb92f98ab46))
+
 ## v0.3.0 (2022-12-30)
 ### Feature
 * Use mixin for better static analysis tools support ([`0743976`](https://github.com/ngshiheng/sbux/commit/0743976f9c27c686df2b18d8444e2a2bec2a6cca))
