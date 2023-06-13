@@ -20,7 +20,9 @@ class Starbucks:
     def get_stores(self) -> list[Store]:
         """Retrieves a list of stores from the Starbucks API."""
         url = f"{self.api_base_url}/json/mop/stores.json"
+
         response = requests.get(url, headers=self.headers)
+        response.raise_for_status()
 
         return self._parse_get_stores(response)
 
@@ -37,11 +39,12 @@ class Starbucks:
             raise ValueError("Invalid input. branch_code must be a valid string numeric.")
 
         url = f"{self.api_base_url}/json/mop/menu/{branch_code}.json"
+
         response = requests.get(url, headers=self.headers)
+        response.raise_for_status()
 
         return self._parse_get_menu_items(response)
 
     def _parse_get_menu_items(self, response: requests.Response) -> list[Item]:
         menu_data = response.json()["Data"][0]["Items"]
-
         return Item.schema().load(menu_data, many=True)
