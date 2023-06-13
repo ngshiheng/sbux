@@ -22,7 +22,7 @@ autopep8 = "2.0.1"
 black = "23.3.0"
 flake8 = "6.0.0"
 isort = "5.11.4"
-pre-commit = "2.21.0"
+pre-commit = "3.3.2"
 python-semantic-release = "7.32.2"
 
 [tool.black]
