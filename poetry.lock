@@ -710,13 +710,13 @@ test = ["appdirs (==1.4.4)", "covdefaults (>=2.2.2)", "pytest (>=7.2)", "pytest-
 
 [[package]]
 name = "pre-commit"
-version = "3.3.2"
+version = "3.3.3"
 description = "A framework for managing and maintaining multi-language pre-commit hooks."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pre_commit-3.3.2-py2.py3-none-any.whl", hash = "sha256:8056bc52181efadf4aac792b1f4f255dfd2fb5a350ded7335d251a68561e8cb6"},
-    {file = "pre_commit-3.3.2.tar.gz", hash = "sha256:66e37bec2d882de1f17f88075047ef8962581f83c234ac08da21a0c58953d1f0"},
+    {file = "pre_commit-3.3.3-py2.py3-none-any.whl", hash = "sha256:10badb65d6a38caff29703362271d7dca483d01da88f9d7e05d0b97171c136cb"},
+    {file = "pre_commit-3.3.3.tar.gz", hash = "sha256:a2256f489cd913d575c145132ae196fe335da32d91a8294b7afe6622335dd023"},
 ]
 
 [package.dependencies]
@@ -794,13 +794,13 @@ yaml = ["PyYaml (>=5.2)"]
 
 [[package]]
 name = "python-semantic-release"
-version = "7.34.3"
+version = "7.34.6"
 description = "Automatic Semantic Versioning for Python projects"
 optional = false
 python-versions = "*"
 files = [
-    {file = "python-semantic-release-7.34.3.tar.gz", hash = "sha256:ac62990d6c5510ae41abcae34c775ced7cba7b3ed9176578b7954eb956537dbb"},
-    {file = "python_semantic_release-7.34.3-py3-none-any.whl", hash = "sha256:c3de866c4c00af45de0813efa2d37fc0a822946ce9111a3f059d011df06b6510"},
+    {file = "python-semantic-release-7.34.6.tar.gz", hash = "sha256:e9b8fb788024ae9510a924136d573588415a16eeca31cc5240f2754a80a2e831"},
+    {file = "python_semantic_release-7.34.6-py3-none-any.whl", hash = "sha256:7e3969ba4663d9b2087b02bf3ac140e202551377bf045c34e09bfe19753e19ab"},
 ]
 
 [package.dependencies]
@@ -808,7 +808,7 @@ click = ">=7,<9"
 click-log = ">=0.3,<1"
 dotty-dict = ">=1.3.0,<2"
 gitpython = ">=3.0.8,<4"
-invoke = ">=1.4.1,<2"
+invoke = ">=1.4.1,<3"
 packaging = "*"
 python-gitlab = ">=2,<4"
 requests = ">=2.25,<3"
@@ -1229,4 +1229,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "86250aa60bfec625d98d66435a8b5c832eabd81a5c38c970e05d3917d98de350"
+content-hash = "e775cd466524cc58bf68094f1f4633b9b2e3c975636f9a8408c505c46051b370"
