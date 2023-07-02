@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.1 (2023-07-02)
+
+### Fix
+
+* **deps:** Update all non-major dependencies ([`900b3a0`](https://github.com/ngshiheng/sbux/commit/900b3a04d616cebb829cb808b619c974f04501c5))
+
+### Documentation
+
+* Update description ([`244a2b8`](https://github.com/ngshiheng/sbux/commit/244a2b8bc3d35fca958cd5ea04f8cd565be977d6))
+
 ## v0.4.0 (2023-06-13)
 ### Feature
 * Export all models ([`da6182f`](https://github.com/ngshiheng/sbux/commit/da6182f9a4ab6d2fb3432ebd69e863cfd0452da5))
