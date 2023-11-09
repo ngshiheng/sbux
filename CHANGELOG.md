@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.0 (2023-11-09)
+
+### Fix
+
+* Api field update ([`9fccbaf`](https://github.com/ngshiheng/sbux/commit/9fccbaf8d3ff86b117eedc0fde69d8d396640346))
+
+### Breaking
+
+* api field update ([`9fccbaf`](https://github.com/ngshiheng/sbux/commit/9fccbaf8d3ff86b117eedc0fde69d8d396640346))
+
 ## v0.4.2 (2023-10-01)
 
 ### Fix
