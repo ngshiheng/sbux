@@ -25,7 +25,8 @@ class Amenities(BaseSBUXDataClassJsonMixin):
     starbucks_reserve: bool
     mobile_order_and_pay: bool = field(metadata=config(field_name="MobileOrderandPay"))
     free_wifi: bool
-    pour_over_brew: bool
+    cashless: bool
+    twenty_four_hours: bool = field(metadata=config(field_name="24Hours"))
 
 
 @dataclass
@@ -43,5 +44,6 @@ class Store(BaseSBUXDataClassJsonMixin):
     latitude: str
     monp_status: bool = field(metadata=config(field_name="MONPStatus"))
     delivery_status: bool
+    open_now: bool
     service_hours: list[ServiceHour]
     amenities: Amenities

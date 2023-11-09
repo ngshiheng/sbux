@@ -12,6 +12,7 @@ STORES_JSON = {
             "Latitude": "1.3058152595075494",
             "MONPStatus": False,
             "DeliveryStatus": False,
+            "OpenNow": True,
             "ServiceHours": [
                 {
                     "DayOfWeekString": "MONDAY",
@@ -87,11 +88,12 @@ STORES_JSON = {
                 },
             ],
             "Amenities": {
+                "24Hours": False,
+                "Cashless": False,
                 "NitroColdBrew": False,
                 "StarbucksReserve": False,
                 "MobileOrderandPay": True,
                 "FreeWifi": True,
-                "PourOverBrew": False,
             },
         },
         {
@@ -106,6 +108,7 @@ STORES_JSON = {
             "Latitude": "1.305575",
             "MONPStatus": False,
             "DeliveryStatus": False,
+            "OpenNow": True,
             "ServiceHours": [
                 {
                     "DayOfWeekString": "MONDAY",
@@ -181,10 +184,11 @@ STORES_JSON = {
                 },
             ],
             "Amenities": {
+                "24Hours": False,
+                "Cashless": False,
                 "FreeWifi": True,
                 "MobileOrderandPay": True,
                 "NitroColdBrew": False,
-                "PourOverBrew": False,
                 "StarbucksReserve": False,
             },
         },
