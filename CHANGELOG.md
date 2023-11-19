@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.1 (2023-11-19)
+
+### Fix
+
+* **deps:** Update dependency requests-cache to v1.1.1 ([`fa30162`](https://github.com/ngshiheng/sbux/commit/fa3016227a80457cac10de779d48ca5c6a0b3a1b))
+
 ## v1.0.0 (2023-11-09)
 
 ### Fix
