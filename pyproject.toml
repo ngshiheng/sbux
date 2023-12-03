@@ -14,7 +14,7 @@ version = "1.0.1"
 [tool.poetry.dependencies]
 python = "^3.9"
 requests = "2.31.0"
-dataclasses-json = "0.6.2"
+dataclasses-json = "0.6.3"
 requests-cache = "1.1.1"
 
 [tool.poetry.group.dev.dependencies]
