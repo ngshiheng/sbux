@@ -318,13 +318,13 @@ test = ["hypothesis (>=1.11.4,!=3.79.2)", "iso8601", "pretend", "pytest (>=6.2.0
 
 [[package]]
 name = "dataclasses-json"
-version = "0.6.2"
+version = "0.6.3"
 description = "Easily serialize dataclasses to and from JSON."
 optional = false
 python-versions = ">=3.7,<4.0"
 files = [
-    {file = "dataclasses_json-0.6.2-py3-none-any.whl", hash = "sha256:71816ced3d0f55a2c5bc1a813ace1b8d4234e79a08744269a7cf84d6f7c06e99"},
-    {file = "dataclasses_json-0.6.2.tar.gz", hash = "sha256:1b934c1bd63e775880946b8361a902d7de86e894bab8098eab27c010f95724d1"},
+    {file = "dataclasses_json-0.6.3-py3-none-any.whl", hash = "sha256:4aeb343357997396f6bca1acae64e486c3a723d8f5c76301888abeccf0c45176"},
+    {file = "dataclasses_json-0.6.3.tar.gz", hash = "sha256:35cb40aae824736fdf959801356641836365219cfe14caeb115c39136f775d2a"},
 ]
 
 [package.dependencies]
@@ -1204,4 +1204,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "28d18e380ceefe695f6f8f35bfa844c9f53142fd07a407f6ef0aa51947d5888c"
+content-hash = "bb046e2673109563ae7bec6119a7299f54592b5e7b932f6b9c09933a84d9aa16"
