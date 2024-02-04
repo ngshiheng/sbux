@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.3 (2024-02-04)
+
+### Fix
+
+* **deps:** Update dependency dataclasses-json to v0.6.4 ([`8b102c7`](https://github.com/ngshiheng/sbux/commit/8b102c75ff9d7fb719e1c1174f5464a39275e183))
+
 ## v1.0.2 (2023-12-03)
 
 ### Fix
