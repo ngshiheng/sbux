@@ -48,7 +48,7 @@ jobs:
                   poetry install
 
             - name: Lint
-              uses: pre-commit/action@v3.0.0
+              uses: pre-commit/action@v3.0.1
 
             - name: Unit tests
               run: poetry run python3 -m unittest src/tests/*.py
