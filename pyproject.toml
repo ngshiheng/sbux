@@ -14,7 +14,7 @@ version = "1.0.4"
 [tool.poetry.dependencies]
 python = "^3.9"
 requests = "2.31.0"
-dataclasses-json = "0.6.5"
+dataclasses-json = "0.6.6"
 requests-cache = "1.2.0"
 
 [tool.poetry.group.dev.dependencies]
@@ -22,7 +22,7 @@ autopep8 = "2.1.0"
 black = "23.12.1"
 flake8 = "7.0.0"
 isort = "5.13.2"
-pre-commit = "3.7.0"
+pre-commit = "3.7.1"
 python-semantic-release = "7.34.6"
 
 [tool.black]
