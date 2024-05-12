@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.5 (2024-05-12)
+
+### Fix
+
+* **deps:** Update all non-major dependencies ([`50da4b7`](https://github.com/ngshiheng/sbux/commit/50da4b7e70084c212575ee9840be6b2f5ac6f0c2))
+
 ## v1.0.4 (2024-05-05)
 
 ### Fix
