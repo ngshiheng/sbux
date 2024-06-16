@@ -18,9 +18,9 @@ dataclasses-json = "0.6.7"
 requests-cache = "1.2.0"
 
 [tool.poetry.group.dev.dependencies]
-autopep8 = "2.2.0"
+autopep8 = "2.3.0"
 black = "23.12.1"
-flake8 = "7.0.0"
+flake8 = "7.1.0"
 isort = "5.13.2"
 pre-commit = "3.7.1"
 python-semantic-release = "7.34.6"
