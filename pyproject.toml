@@ -23,7 +23,7 @@ black = "24.4.2"
 flake8 = "7.1.0"
 isort = "5.13.2"
 pre-commit = "3.7.1"
-python-semantic-release = "7.34.6"
+python-semantic-release = "9.8.3"
 
 [tool.black]
 line-length = 100
