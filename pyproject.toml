@@ -4,9 +4,7 @@ description = "An unofficial Starbucks Singapore (SG) software development kit (
 homepage = "https://github.com/ngshiheng/sbux"
 license = "MIT"
 name = "sbux"
-packages = [
-  {include = "sbux", from = "src"},
-]
+packages = [{ include = "sbux", from = "src" }]
 readme = "README.md"
 repository = "https://github.com/ngshiheng/sbux"
 version = "1.0.5"
@@ -23,7 +21,7 @@ black = "24.4.2"
 flake8 = "7.1.0"
 isort = "5.13.2"
 pre-commit = "3.7.1"
-python-semantic-release = "9.8.3"
+python-semantic-release = "7.34.6"
 
 [tool.black]
 line-length = 100
@@ -39,12 +37,8 @@ build_command = "pip install poetry && poetry build"
 major_on_zero = true
 upload_to_pypi = true
 upload_to_release = true
-version_toml = [
-  "pyproject.toml:tool.poetry.version",
-]
-version_variable = [
-  "src/sbux/__init__.py:__version__",
-]
+version_toml = ["pyproject.toml:tool.poetry.version"]
+version_variable = ["src/sbux/__init__.py:__version__"]
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
